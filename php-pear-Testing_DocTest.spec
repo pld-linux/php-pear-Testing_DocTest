@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - A Unit Test framework for writing tests in your php code docstrings
 Summary(pl.UTF-8):	%{_pearname} - framework do pisania testów w kodzie php za pomocą docstrings
 Name:		php-pear-%{_pearname}
-Version:	0.3.1
-Release:	3
+Version:	0.5.0
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	238926831e2200b7e802215819545fa5
+# Source0-md5:	9eccb6d8339f01d2546a32d18e20f8ee
 URL:		http://pear.php.net/package/Testing_DocTest/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -68,9 +68,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
