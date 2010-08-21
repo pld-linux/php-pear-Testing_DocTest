@@ -1,23 +1,22 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Testing
-%define		_subclass	DocTest
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	Testing_DocTest
 Summary:	%{_pearname} - A Unit Test framework for writing tests in your php code docstrings
 Summary(pl.UTF-8):	%{_pearname} - framework do pisania testów w kodzie php za pomocą docstrings
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	9eccb6d8339f01d2546a32d18e20f8ee
 URL:		http://pear.php.net/package/Testing_DocTest/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
-Requires:	php-pear-Console_CommandLine >= 1.0.0
+Requires:	php-pear-Console_CommandLine >= 1.0.0-0.RC3
 Requires:	php-pear-PEAR-core >= 1:1.4.0
+Requires:	php-tokenizer
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
