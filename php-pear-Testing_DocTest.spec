@@ -5,7 +5,7 @@ Summary:	%{_pearname} - A Unit Test framework for writing tests in your php code
 Summary(pl.UTF-8):	%{_pearname} - framework do pisania testów w kodzie php za pomocą docstrings
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
