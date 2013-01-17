@@ -1,15 +1,15 @@
+%define		status		beta
+%define		pearname	Testing_DocTest
 %include	/usr/lib/rpm/macros.php
-%define		_status		beta
-%define		_pearname	Testing_DocTest
-Summary:	%{_pearname} - A Unit Test framework for writing tests in your php code docstrings
-Summary(pl.UTF-8):	%{_pearname} - framework do pisania testów w kodzie php za pomocą docstrings
-Name:		php-pear-%{_pearname}
-Version:	0.5.0
-Release:	4
+Summary:	%{pearname} - A Unit Test framework for writing tests in your php code docstrings
+Summary(pl.UTF-8):	%{pearname} - framework do pisania testów w kodzie php za pomocą docstrings
+Name:		php-pear-%{pearname}
+Version:	0.6.0
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9eccb6d8339f01d2546a32d18e20f8ee
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	b6143bc74c19f29368f72957db608c42
 URL:		http://pear.php.net/package/Testing_DocTest/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -42,7 +42,7 @@ There are several advantages in using Testing_DocTest:
 - it enforces writing of tutorial documentation, liberally illustrated
   with input-output examples.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Testing_DocTest pozwala developerowi na pisanie testów bezpośrednio
@@ -63,7 +63,7 @@ Istnieje sporo korzyści z wykorzystania Testing_DocTest:
 - wymusza pisanie dokumentacji, ilustrując za pomocą przykładów
   wejścia-wyjścia.
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
