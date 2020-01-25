@@ -1,6 +1,5 @@
 %define		status		beta
 %define		pearname	Testing_DocTest
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - A Unit Test framework for writing tests in your php code docstrings
 Summary(pl.UTF-8):	%{pearname} - framework do pisania testów w kodzie php za pomocą docstrings
 Name:		php-pear-%{pearname}
